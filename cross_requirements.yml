@@ -1,0 +1,17 @@
+name: ISL_rtNF
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pytz
+  - pyside6
+  - nipype
+  - pygame
+  - pytorch
+  - cpuonly
+  - torchvision
+  - gst-plugins-base
+  - gst-plugins-good
+  - gstreamer
+  - gst-libav

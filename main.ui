@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="ExperimentMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Real-time fMRI NF toolbox for multimodal image and text</string>
+  </property>
+  <widget class="QWidget" name="grid_main">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QGroupBox" name="group_Settings">
+      <property name="title">
+       <string>Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="group_MRIParm">
+         <property name="title">
+          <string>Experiment</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_date">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Date</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QDateEdit" name="box_date">
+            <property name="dateTime">
+             <datetime>
+              <hour>0</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2022</year>
+              <month>7</month>
+              <day>27</day>
+             </datetime>
+            </property>
+            <property name="displayFormat">
+             <string>yyyyMMdd</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_subject">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Subject</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="box_subject">
+            <property name="text">
+             <string>KJE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="group_ReviewParm">
+         <property name="title">
+          <string>Review</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_nrt_volumes_title">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string># of NRT Task Volumes</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_nrt_volumes">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>NRT Task Volumes</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_rt_volumes_title">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string># of RT Task Volumes</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_rt_volumes">
+            <property name="minimumSize">
+             <size>
+              <width>71</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>RT Task Volumes</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QGroupBox" name="group_Paradigm">
+         <property name="title">
+          <string>Run</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="16" column="1">
+           <widget class="QPushButton" name="btn_rt">
+            <property name="text">
+             <string>RT</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="label_series_3">
+            <property name="text">
+             <string>Start button (nrt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_series_2">
+            <property name="text">
+             <string>Series (nrt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0">
+           <widget class="QPushButton" name="btn_nrt">
+            <property name="text">
+             <string>NRT</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="box_series_rt">
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="box_series_nrt">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_series_5">
+            <property name="text">
+             <string>Series (rt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_series_8">
+            <property name="text">
+             <string>Run (rt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QComboBox" name="run_rt">
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+             <item>
+             <property name="text">
+              <string>3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="QLabel" name="label_series_6">
+            <property name="text">
+             <string>Start button (rt)</string>
+            </property>
+           </widget>
+          </item>
+          <!-- <item row="5" column="0">
+           <widget class="QComboBox" name="tg_nrt">
+            <item>
+             <property name="text">
+              <string>image</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>text</string>
+             </property>
+            </item>
+           </widget>
+          </item> -->
+          <!-- <item row="4" column="0">
+           <widget class="QLabel" name="label_series_4">
+            <property name="text">
+             <string>Target modality (nrt)</string>
+            </property>
+           </widget>
+          </item> -->
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_series">
+            <property name="text">
+             <string>Run (nrt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QComboBox" name="run_nrt">
+            <item>
+             <property name="text">
+              <string>pre1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>pre2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>post1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>post2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_title_sham">
+            <property name="text">
+             <string>Matching Subject Etime Path (rt)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_sham_path">
+            <property name="text">
+             <string>None</string>
+            </property>
+           </widget>
+          </item>
+
+          <item row="6" column="1">
+           <widget class="QPushButton" name="btn_sham_path">
+            <property name="text">
+             <string>Set Etime Path</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
